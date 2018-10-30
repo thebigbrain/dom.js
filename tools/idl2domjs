@@ -43,7 +43,7 @@ if (!infile) {
     process.exit(1);
 }
 var sourceidl = require("fs").readFileSync(infile,"utf-8");
-var webidl = require("../deps/webidl.js/node/WebIDLParser.js")
+var webidl = require("webidl.js/node/WebIDLParser.js")
 var parsedidl;
 try {
     parsedidl = webidl.Parser.parse(sourceidl);

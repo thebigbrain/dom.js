@@ -155,6 +155,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha512-FZdkNBDqBRHKQ2MEbSC17xnPFOhZxeJ2YGSfr2BKf3sujG49Qe3bB+rGCwQfIaA7WHnGeGkSijX4FuBCdrzW/g==
 
+"CoverMonkey@https://github.com/davidflanagan/CoverMonkey.git":
+  version "0.0.0"
+  resolved "https://github.com/davidflanagan/CoverMonkey.git#3e5716a9b2fa8b787bd1f2c16af853f0def9d5c8"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1920,6 +1924,10 @@ parse-asn1@^5.0.0:
     evp_bytestokey "^1.0.0"
     pbkdf2 "^3.0.3"
 
+"parserlib@https://github.com/nzakas/parser-lib.git":
+  version "1.1.2"
+  resolved "https://github.com/nzakas/parser-lib.git#7433cb0869429333c6929bd060af8700c0455bdd"
+
 pascalcase@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
@@ -1960,6 +1968,11 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+pegjs@0.7:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/pegjs/-/pegjs-0.7.0.tgz#aaa1f824f9e7197ec44e22a57af522f700dd689e"
+  integrity sha1-qqH4JPnnGX7ETiKlevUi9wDdaJ4=
 
 pify@^3.0.0:
   version "3.0.0"
@@ -2654,6 +2667,12 @@ watchpack@^1.5.0:
     chokidar "^2.0.2"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+
+"webidl.js@https://github.com/darobin/webidl.js.git":
+  version "0.1.0"
+  resolved "https://github.com/darobin/webidl.js.git#1b24f3694a2779d783af2fa4ec0b5ee49e01e339"
+  dependencies:
+    pegjs "0.7"
 
 webpack-cli@^3.1.2:
   version "3.1.2"

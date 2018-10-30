@@ -7,5 +7,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: "dom.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.idl$/,
+        enforce: "pre",
+        use: [path.resolve(__dirname, 'tools', 'idl2domjs.js')]
+      }
+    ]
   }
 };

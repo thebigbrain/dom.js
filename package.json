@@ -9,7 +9,12 @@
     "build": "webpack"
   },
   "devDependencies": {
+    "parserlib": "https://github.com/nzakas/parser-lib.git",
+    "CoverMonkey": "https://github.com/davidflanagan/CoverMonkey.git",
+    "webidl.js": "https://github.com/darobin/webidl.js.git",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
   }
 }

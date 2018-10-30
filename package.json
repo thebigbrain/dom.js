@@ -1,0 +1,15 @@
+{
+  "name": "dom.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thebigbrain/dom.js.git",
+  "author": "thebigbrain <uibrick@126.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

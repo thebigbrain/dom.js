@@ -5,3 +5,6 @@ src/html5.js
 src/htmlelts.js
 dom.js.xcodeproj
 *~
+.idea
+node_modules
+dist

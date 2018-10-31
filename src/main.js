@@ -6,9 +6,10 @@ defineLazyProperty(global, "document", function() {
     return wrap(doc);
 });
 */
+const Window = require('./impl/Window');
 
 // Create a window implementation object
-var w = new Window();  // See src/impl/Window.js
+const w = new Window();  // See src/impl/Window.js
 
 // Arrange to have it wrap to the global object
 // And have the global object unwrap to w

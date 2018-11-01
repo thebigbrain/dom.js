@@ -13,7 +13,7 @@ module.exports = {
       {
         test: /\.idl$/,
         enforce: "pre",
-        use: [path.resolve(__dirname, 'tools', 'idl2domjs.js')]
+        use: [path.resolve(__dirname, 'tools', 'idl2domjs')]
       }
     ]
   }

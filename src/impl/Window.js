@@ -1,12 +1,12 @@
 // This is a simple constructor for a simple Window implementation
 // We'll set things up (in src/main.js for now) so that it unwraps
 // to the global object
-function Window() {
+module.exports = function Window() {
     this.document = new impl.DOMImplementation().createHTMLDocument("");
     this.document._scripting_enabled = true;
     this.document.defaultView = this;
     this.location = new Location(this, "about:blank");
-}
+};
 
 Window.prototype = O.create(impl.EventTarget.prototype, {
     _idlName: constant("Window"),

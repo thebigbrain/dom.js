@@ -17,7 +17,7 @@
 // this file, so they must be passed in wrapped.
 //
 
-function EventHandlerBuilder(body, document, form, element) {
+export function EventHandlerBuilder(body, document, form, element) {
     this.body = body;
     this.document = document;
     this.form = form;
@@ -25,15 +25,12 @@ function EventHandlerBuilder(body, document, form, element) {
 }
 
 EventHandlerBuilder.prototype.build = function build() {
-    with(this.document)
-        with(this.form)
-            with(this.element)
-                return eval("(function(event){" + this.body + "})");
+  return eval("(function(event){" + this.body + "})");
 };
 
 // Define this here so it is not in strict mode
 // Because strict mode eval can't define variables.
-function evalScript(s) {
+export function evalScript(s) {
     var geval = eval; // Do an indirect eval to get global context
     s = 'try{' +
         s +

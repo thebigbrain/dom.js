@@ -15,7 +15,7 @@
  * functions and methods to test whether we avoid using them.
  */
 
-function shallow_frozen_copy(o) {
+export function shallow_frozen_copy(o) {
     var r = {};
     Object.getOwnPropertyNames(o).forEach(function(n) {
         Object.defineProperty(r, n, Object.getOwnPropertyDescriptor(o, n));
@@ -23,7 +23,7 @@ function shallow_frozen_copy(o) {
     return Object.freeze(r);
 }
 
-const undefined = void 0,
+export const undefined = void 0,
 
     // Copy the original state of constructor functions
     // This is not a complete list. I've left out error types I'm unlikely
@@ -67,7 +67,7 @@ if (!Array.forEach) {
 }
 
 
-const
+export const
     // Some global functions.
     // Note that in strict mode we're not allowed to create new identifiers
     // named eval.  But if we give eval any other name then it does a
@@ -158,7 +158,7 @@ const
 // These are all unique and have their uses, particularly for formatting.
 // Also, only when accessing directly from primitive wrapper (string/number) is
 // the native version assured to be used.
-const toString = Object.freeze({
+export const toString = Object.freeze({
     // `[].join(',')`
     Array: callbind(Array.prototype.toString),
     // 'true' or 'false'

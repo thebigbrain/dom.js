@@ -6,7 +6,8 @@
   "author": "thebigbrain <uibrick@126.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --progress --color",
+    "dev": "node index.js"
   },
   "devDependencies": {
     "parserlib": "https://github.com/nzakas/parser-lib.git",
